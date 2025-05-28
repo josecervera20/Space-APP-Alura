@@ -1,3 +1,4 @@
+/* Variables CSS */
 :root {
     font-family: 'Open Sans', sans-serif;
     --main-color: #001634;
@@ -5,24 +6,27 @@
     --secondary-color: #7B78E5;
 }
 
+/* Estilos globales del cuerpo */
 body {
     color: var(--white);
     background: var(--main-color);
     background: linear-gradient(90deg, rgba(4, 24, 51, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-
 }
 
+/* Estilos del encabezado */
 .header {
     display: flex;
     justify-content: space-between;
 }
 
+/* Estilos del logo del encabezado */
 .header__logo {
     margin: 0.8rem;
     height: 5%;
     width: 15%;
 }
 
+/* Estilos del input de búsqueda en el encabezado */
 .header__input {
     width: 30%;
     margin: 2% 3% 2% 2%;
@@ -32,25 +36,26 @@ body {
     color: var(--white);
 }
 
+/* Estilos del placeholder del input */
 ::placeholder {
     color: #a2a2a2;
     opacity: 1;
     font-size: 12px;
     font-family: '' Roboto Condensed'', sans-serif;
-
 }
 
+/* Contenedor principal de aside y banner */
 .grouping {
     display: flex;
     flex-direction: row;
-
-
 }
 
+/* Estilos del menú lateral (aside) */
 .aside {
     width: 18%;
 }
 
+/* Estilos de la lista del menú lateral */
 .lista__menu {
     display: flex;
     flex-direction: column;
@@ -59,9 +64,9 @@ body {
     width: 100%;
     font-size: 16px;
     font-weight: 300;
-
 }
 
+/* Estilos de cada ítem de la lista del menú */
 .item__lista {
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +74,7 @@ body {
     margin-bottom: 7%;
 }
 
+/* Estilos de íconos (ej: Font Awesome) */
 .fa-house {
     margin-right: 5%;
 }
@@ -85,6 +91,7 @@ body {
     margin-right: 5%;
 }
 
+/* Estilos del banner principal */
 .banner {
     display: flex;
     flex-direction: column;
@@ -92,12 +99,12 @@ body {
     margin: 1% 2%;
 }
 
-
+/* Estilos de la imagen del banner */
 .banner__image {
     margin: 0% 1% 0% 0%;
 }
 
-
+/* Estilos del texto de la galería */
 .gallery__text {
     margin-top: 5%;
     margin-bottom: 2%;
@@ -107,7 +114,7 @@ body {
     color: var(--secondary-color);
 }
 
-
+/* Sección de tarjetas de contenido */
 .card__section {
     display: flex;
     flex-direction: column-reverse;
@@ -116,7 +123,7 @@ body {
     margin-right: 2%;
 }
 
-
+/* Lista de tarjetas */
 .ul__cards {
     display: flex;
     flex-direction: row;
@@ -124,17 +131,17 @@ body {
     justify-content: space-between;
 }
 
+/* Estilos de cada tarjeta individual */
 .card {
     height: 13rem;
     background-color: var(--main-color);
-    ;
     width: 23%;
     border-radius: 10px;
     margin-bottom: 5%;
     margin-right: 3.2%;
-
 }
 
+/* Estilos de la imagen dentro de la tarjeta */
 .card__image {
     width: 100%;
     height: 80%;
@@ -143,6 +150,7 @@ body {
     border-radius: 10px 10px 0px 0px;
 }
 
+/* Estilos del título de la tarjeta */
 .card__title {
     font-size: 14px;
     margin-left: 4%;
@@ -150,6 +158,7 @@ body {
     font-weight: 100;
 }
 
+/* Estilos del subtítulo de la tarjeta */
 .card__subtitle {
     font-size: 10px;
     margin-left: 4%;
@@ -157,11 +166,13 @@ body {
     margin-bottom: 5%;
 }
 
+/* Contenedor de información de la tarjeta */
 .card__information {
     display: flex;
     flex-direction: row;
 }
 
+/* Estilos del pie de página */
 .footer {
     display: flex;
     flex-direction: row;
@@ -169,44 +180,44 @@ body {
     width: 100%;
     height: 8vh;
     background-color: var(--main-color);
-    ;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Contenedor de íconos del pie de página */
 .footer__icons {
     color: var(--white);
     margin-left: 8%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
+/* Estilos específicos del ícono de Twitter */
 .fa-twitter {
     margin-left: 50%;
     margin-right: 50%;
 }
 
+/* Estilos del texto del pie de página */
 .footer__text {
     margin-right: 3%;
     font-size: 14px;
     font-weight: 300;
-
 }
 
+/* Media query para pantallas de hasta 851px */
+@media screen and (max-width: 851px) {
 
-
-
-/* @media screen and (max-width: 851px){
-
-    .header__logo{
+    /* Ajustes para el logo del encabezado */
+    .header__logo {
         margin: 0.8rem;
         height: 1%;
         width: 30%;
     }
-    
-    .header__input{
+
+    /* Ajustes para el input del encabezado */
+    .header__input {
         width: 45%;
         height: 5%;
         margin: 2% 3% 2% 2%;
@@ -214,63 +225,70 @@ body {
         align-self: center;
     }
 
-    
-    .card{
+    /* Ajustes para las tarjetas */
+    .card {
         height: 15rem;
         width: 40%;
-    } 
-    
-    .card__image{
-        width: 100%;
-        height: 80%;
-    } 
-    
-    .card__title{
-        font-size: 12px;
-        
     }
 
-    .card__subtitle{
+    /* Ajustes para la imagen de la tarjeta */
+    .card__image {
+        width: 100%;
+        height: 80%;
+    }
+
+    /* Ajustes para el título de la tarjeta */
+    .card__title {
+        font-size: 12px;
+    }
+
+    /* Oculta el subtítulo de la tarjeta */
+    .card__subtitle {
         display: none;
     }
 
-    .lista__menu{
+    /* Ajustes para la lista del menú lateral */
+    .lista__menu {
         margin-left: 10%;
         font-size: 12px;
-          
     }
 
-    .gallery__text{
+    /* Ajustes para el texto de la galería */
+    .gallery__text {
         font-size: 14px;
     }
 
-    ::placeholder{
+    /* Ajustes para el placeholder */
+    ::placeholder {
         font-size: 12px;
         margin: 3%;
     }
 }
- 
 
+/* Media query para pantallas de hasta 526px */
+@media screen and (max-width: 526px) {
 
-@media screen and (max-width: 526px){
-
+    /* Ajustes del cuerpo para una disposición en columna */
     body {
         display: flex;
         flex-direction: column;
     }
 
+    /* Ajustes del encabezado para una disposición en columna */
     .header {
         display: flex;
         flex-direction: column;
     }
 
-    .header__logo{
+    /* Ajustes para el logo del encabezado */
+    .header__logo {
         margin: 0.8rem;
         height: 1%;
         width: 30%;
     }
-    
-    .header__input{
+
+    /* Ajustes para el input del encabezado */
+    .header__input {
         width: 92%;
         height: 5%;
         margin: 2% 3% 2% 2%;
@@ -278,44 +296,50 @@ body {
         align-self: center;
     }
 
-    .banner{
+    /* Ajustes para el banner */
+    .banner {
         display: flex;
         flex-direction: column;
         width: 96%;
-        margin: 1% ;
+        margin: 1%;
     }
 
-    .card__section{
+    /* Ajustes para la sección de tarjetas */
+    .card__section {
         width: 94%;
         margin-left: 4%;
     }
 
-    .card{
+    /* Ajustes para las tarjetas */
+    .card {
         height: 8rem;
         width: 47%;
         margin: 1%;
-    } 
-    
-    .card__image{
+    }
+
+    /* Ajustes para la imagen de la tarjeta */
+    .card__image {
         width: 100%;
         height: 80%;
-    } 
-    
-    .card__title{
+    }
+
+    /* Ajustes para el título de la tarjeta */
+    .card__title {
         font-size: 10px;
-        
     }
 
-    .lista__menu{
+    /* Oculta la lista del menú lateral */
+    .lista__menu {
         display: none;
-          
     }
 
-    .gallery__text{
+    /* Ajustes para el texto de la galería */
+    .gallery__text {
         font-size: 14px;
     }
 
-    ::placeholder{
+    /* Ajustes para el placeholder */
+    ::placeholder {
         font-size: 12px;
     }
-} */
+}
