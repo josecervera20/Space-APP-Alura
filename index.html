@@ -7,27 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Titulo -->
     <title>SpaceAPP</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/cohete.png">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Lato:wght@300&family=Open+Sans&family=Oswald&family=Poppins:wght@200;500;700&family=Press+Start+2P&family=REM&family=Roboto+Condensed&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Lato:wght@300&family=Open+Sans&family=Oswald&family=Poppins:wght@200;500;700&family=Press+Start+2P&family=REM&family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+    <!-- Encabezado con logo e input de búsqueda -->
     <header class="header">
         <img class="header__logo" src="./assets/LogoSpaceApp.png" alt="SpaceApp">
         <input class="header__input" type="text" placeholder="Qué buscas?">
     </header>
 
     <div class="grouping">
-
+        <!-- Menú lateral -->
         <aside class="aside">
             <ul class="lista__menu">
                 <div class="item__lista">
@@ -45,36 +46,20 @@
             </ul>
         </aside>
 
+        <!-- Banner principal -->
         <div class="banner">
-            <img class="banner__image" src="assets/BannerSpaceApp.png" alt="bla">
-            <h3 class="gallery__text">Explore la galería</h2>
+            <img class="banner__image" src="./assets/BannerSpaceApp.png" alt="Banner de SpaceApp">
+            <h2 class="gallery__text">Explore la galería</h2>
 
         </div>
     </div>
 
+    <!-- Sección de tarjetas (contenido dinámico) -->
     <section class="card__section">
-
-        <ul class="ul__cards" data-ul>
-            <!-- <li class="card">
-                    <img class="card__image" src="assets/BannerSpaceApp.png" alt="imagen">
-                    <h3 class="card__title">Educación y Tecnologia</h3>
-                </li>
-                <li class="card">
-                    <img class="card__image" src="assets/BannerSpaceApp.png" alt="imagen">
-                    <h3 class="card__title">Educación y Tecnologia</h3>
-                </li>
-                <li class="card">
-                    <img class="card__image" src="assets/BannerSpaceApp.png" alt="imagen">
-                    <h3 class="card__title">Educación y Tecnologia</h3>
-                </li>
-                <li class="card">
-                    <img class="card__image" src="assets/BannerSpaceApp.png" alt="imagen">
-                    <h3 class="card__title">Educación y Tecnologia</h3>
-                 -->
-
-        </ul>
+        <ul class="ul__cards" data-ul></ul>
     </section>
 
+    <!-- Pie de página con íconos sociales -->
     <footer class="footer">
         <div class="footer__icons">
             <i class="fa-brands fa-facebook"></i>
@@ -83,8 +68,10 @@
         </div>
         <p class="footer__text">Desarrollado por Alura Latam</p>
     </footer>
+
+    <!-- JS -->
     <script src="https://kit.fontawesome.com/ef3eea8822.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
