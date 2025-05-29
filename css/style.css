@@ -342,4 +342,30 @@ body {
     ::placeholder {
         font-size: 12px;
     }
+
+    /* Estilos del pie de página */
+    .footer {
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+        width: 100%;
+        height: 8vh;
+        background-color: var(--main-color);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Contenedor de íconos del pie de página */
+    .footer__icons {
+        width: 10%;
+    }
+
+    .fa-facebook {
+        margin-left: 50%;
+    }
+
+    /* Estilos del texto del pie de página */
+    .footer__text {
+        font-size: 11px;
+    }
 }
