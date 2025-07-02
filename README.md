@@ -50,3 +50,7 @@ Este proyecto utiliza la **`DEMO_KEY`** proporcionada por la NASA, lo que te per
 ## 👏 Créditos
 
 Este proyecto fue desarrollado como parte del curso **"JavaScript: Consumiendo y Manejando Datos de una API"** en la plataforma Alura.
+
+## 📄 Licencia
+
+Este proyecto es de código abierto y se publica bajo la [Licencia MIT](LICENSE). Siéntete libre de usar, modificar y distribuir este código para tus propios proyectos.
